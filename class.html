@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TEST
+        </title>
+    </head>
+    <body>
+        <P>This the code for class object in js......</P>
+       <p>happy coding..., In javascript u can not use variable without declaring it </p>
+        <p id="demo"></p>
+
+        <script>
+           class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                const date = new Date();
+                return date.getFullYear() - this.year;
+            }
+           }
+
+           const myCar = new Car("benz", 2024);
+           document.getElementById("demo").innerHTML = "my car is " + myCar.age() + "year old";
+        </script>
+    </body>
+</html>
