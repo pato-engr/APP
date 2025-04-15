@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>whgat javascript can do.</title>
+
+    </head>
+    <body>
+        <h2>What can javascript do?</h2>
+        <p id="demo">javascript can change html content</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hi, js user!!!!!"'>click me.</button>
+
+        <p id="demo2">the second content that js can change</p>
+        <button type="button" onclick='document.getElementById("demo2").innerHTML="hello Js"'>click me</button>
+
+        <p id="demo3">javascript can increase the font size of a content</p>
+        <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">click me</button>
+
+        <p> can also diplay a block of code</p>
+        <p id="demo4" style="display:none">the best name of js</p>
+        <button type="button" onclick='document.getElementById("demo4").style.display="block"'>click me</button>
+
+        <p id="demo5">the best name of js</p>
+        <button type="button" onclick="document.getElementById('demo5').style.display='none'">click me</button>
+
+
+        <!-- u can also put it in script too -->
+        <p id="demo6"></p>
+
+        <h2>js in the body</h2>
+        <p id="demo7">a paragraph</p>
+        <button type="button" onclick="myFunction()">click me??</button>
+
+        <script>
+            document.getElementById('demo6').innerHTML="this is my inner content";
+
+            function myFunction(){
+                document.getElementById('demo7').innerHTML="the paragraph is change to p";
+            }
+
+        </script>
+
+    </body>
+</html>
